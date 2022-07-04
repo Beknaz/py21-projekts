@@ -1,0 +1,20 @@
+[
+    {
+        "title": "Backend Developer",
+        "company": "Google",
+        "company_url": "https://google.com",
+        "location": "Kyrgyzstan",
+        "description": "We need backend developer",
+        "date_posted": "2022-06-01",
+        "relocation": false
+    },
+    {
+        "title": "Frontend Developer",
+        "company": "Makers",
+        "company_url": null,
+        "location": "Kyrgyzstan",
+        "description": "We need frontend developer",
+        "date_posted": "2022-06-02",
+        "relocation": true
+    }
+]
