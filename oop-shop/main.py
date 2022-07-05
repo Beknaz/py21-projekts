@@ -1,9 +1,9 @@
-from models import User, Produkt, Comment
-user1 = User("choybekov@gmail.com", "Beka", "M")
-user1.resister("123", "123")
-user1.login("123")
-print(user1.is_authenticated)
+from shop.models import Product
+from abstract.serializers import BaseSerializer
 
-product1 = Produkt("Iphone", "15", "343", "10")
-comment1 = Comment(user1, product1, "Клаассс")
-print(comment1)
+obj1 = Product("iphone", 234, "...", 3)
+obj2 = Product("lenovo", 234, "...", 3)
+obj3 = Product("Nokia", 234, "...", 3)
+res = BaseSerializer().serialize_queryset([obj1, obj2, obj3])
+from pprint import pprint
+pprint(res)
