@@ -5,11 +5,11 @@ import random
 pygame.init()
  
 white = (255, 255, 255)
-yellow = (255, 255, 102)
-black = (0, 0, 0)
-red = (213, 50, 80)
-green = (0, 255, 0)
-blue = (50, 153, 213)
+yellow = (0, 0, 255)
+black = (255, 105, 180)
+red = (255, 0, 0)
+green = (128, 0, 0)
+blue = (211, 211, 211)
  
 dis_width = 600
 dis_height = 400
