@@ -1,10 +1,6 @@
-from sys import builtin_module_names
-from webbrowser import get
-
-
 class BaseSerializer:
     class Meta:
-        fields = ["title", "price", "desc"]
+        fields = []
         queryset = []
     
     def serialize_obj(self, obj):
@@ -18,7 +14,7 @@ class BaseSerializer:
     def serialize_queryset(self, queryset=None):
         if queryset is None:
             queryset = self.Meta.queryset
-            
+
         list_ = []
         for obj in queryset:
             dict_ = self.serialize_obj(obj)

@@ -3,7 +3,7 @@ from pprint import pprint
 
 while True:
     try:
-        url, arg = input("Введите адрес: ").split("/")
+        url, arg = input("Вы можете выбрать: listing/, create/, retrieve/, update/, delete/, comment/ ").split("/")
     except ValueError:
         print("Enter a valid url")
         continue

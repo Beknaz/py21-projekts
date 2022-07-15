@@ -6,6 +6,8 @@ def get_obj_or_404(model, attr, val):
         if obj_val == val:
             found = True
             break
-        
+
     if not found:
-        raise Exception(f"404 {model.__name__} Not Found")
+        raise Exception(f"404 {model.__name__}  Not Found")
+    
+    return obj
