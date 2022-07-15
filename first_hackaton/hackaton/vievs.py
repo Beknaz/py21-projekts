@@ -54,6 +54,8 @@ def comment():
     print("Выберите продукт:")
     for p in Car.objects:
         print(p.marka, p.model)
+        # указывать надо именно модель а не марку
+        
     model = input("===============\nукажите модель: ")
     car = obj_404(Car, "model", model)
     body = input("Введите коммент: ")
